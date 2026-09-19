@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>ПРОТЕКТОР — шиномонтаж за 25 минут</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600&family=Unbounded:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="dark">
+
+<!-- прелоадер -->
+<div class="pre" id="pre">
+  <div class="pre__name">ПРОТЕКТОР</div>
+  <div class="pre__num"><span id="preNum">00</span></div>
+  <div class="pre__bar"><i id="preBar"></i></div>
+</div>
+
+<!-- курсор -->
+<div class="cur" id="cur"><div class="cur__ring"></div><div class="cur__tag" id="curTag">тяни</div></div>
+
+<!-- шапка -->
+<header class="hd" id="hd">
+  <a class="hd__logo rise" href="#top" style="--d:300ms">ПРОТЕКТОР</a>
+  <div class="hd__where rise" style="--d:360ms">
+    <span>[город], [адрес]</span>
+    <span class="hd__muted">8:00–22:00 / без выходных</span>
+  </div>
+  <nav class="hd__nav rise" style="--d:420ms">
+    <a class="roll" href="#uslugi"><span><i>Услуги</i><i>Услуги</i></span></a>
+    <a class="roll" href="#minut"><span><i>25 минут</i><i>25 минут</i></span></a>
+    <a class="roll" href="#raboty"><span><i>Работы</i><i>Работы</i></span></a>
+    <a class="roll" href="#zapis"><span><i>Запись</i><i>Запись</i></span></a>
+  </nav>
+  <a class="hd__phone rise" href="tel:+70000000000" style="--d:480ms">+7 000 000-00-00</a>
+  <button class="btn btn--red rise" data-open style="--d:540ms">Записаться</button>
+</header>
+
+<main id="top">
+
+<!-- 1. ХИРО -->
+<section class="hero-rig" id="hero">
+  <div class="hero" id="heroStage">
+    <div class="hero__bg" id="heroBg"><img src="assets/hero_bg.webp" alt=""></div>
+    <div class="hero__vig"></div>
+
+    <div class="hero__tire" id="tireWrap">
+      <div class="hero__tire-shadow"></div>
+      <div class="hero__tire-spin" id="tireSpin"><img src="assets/tire.webp" alt="" id="tireImg"></div>
+      <div class="hero__tire-light"></div>
+    </div>
+
+    <div class="hero__label rise" style="--d:1200ms">
+      <b>R13–R22</b>
+      <span>легковые и кроссоверы</span>
+    </div>
+
+    <h1 class="hero__h rise" style="--d:900ms">
+      <span class="ln"><span>Переобуем</span></span>
+      <span class="ln"><span>за 25 минут</span></span>
+    </h1>
+    <p class="hero__sub rise" style="--d:1100ms">Две линии, запись на точное время. Заехал, выпил кофе, уехал на&nbsp;новых.</p>
+
+    <div class="hero__side">
+      <div class="plate plate--red rise" style="--d:1480ms">
+        <b>12 мес</b>
+        <span>гарантия на ремонт прокола</span>
+      </div>
+      <div class="plate rise" style="--d:1560ms">
+        <div class="rating">
+          <div class="rating__avs">
+            <img src="assets/av1.webp" alt=""><img src="assets/av2.webp" alt=""><img src="assets/av3.webp" alt="">
+          </div>
+          <div class="rating__txt"><b>5,0</b><span>по отзывам на картах</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__hint rise" id="heroHint" style="--d:1800ms"><span>Листай</span><i></i></div>
+  </div>
+</section>
+
+<!-- 2. УСЛУГИ -->
+<section class="sv" id="uslugi">
+  <div class="sv__head">
+    <div class="sv__sticky">
+      <div class="kicker rv">01 / Что делаем</div>
+      <h2 class="h2 h2--m rv">
+        <span class="ln"><span>Всё, кроме</span></span>
+        <span class="ln"><span>продажи шин</span></span>
+      </h2>
+      <p class="lead rv">Привозишь свои шины, мы&nbsp;ставим, балансируем, чиним и&nbsp;храним до&nbsp;сезона.</p>
+      <div class="sv__index rv"><span id="svIndex">01</span><span class="sv__index-of">/ 06</span></div>
+    </div>
+  </div>
+  <div class="sv__list">
+    <a class="card rv" href="#zapis" data-open data-i="01">
+      <div class="card__img"><img src="assets/mount.webp" alt=""></div>
+      <div class="card__body">
+        <div class="card__num">01</div>
+        <h3 class="card__t">Шиномонтаж</h3>
+        <p>Легковые и кроссоверы, R13–R22. Снятие, перебортировка, установка. Азот в&nbsp;шины бесплатно.</p>
+      </div>
+      <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></div>
+    </a>
+    <a class="card rv" href="#zapis" data-open data-i="02">
+      <div class="card__img"><img src="assets/balance.webp" alt=""></div>
+      <div class="card__body">
+        <div class="card__num">02</div>
+        <h3 class="card__t">Балансировка</h3>
+        <p>На станке и финишная прямо на автомобиле. Руль перестаёт бить на&nbsp;трассе.</p>
+      </div>
+      <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></div>
+    </a>
+    <a class="card rv" href="#zapis" data-open data-i="03">
+      <div class="card__img"><img src="assets/patch.webp" alt=""></div>
+      <div class="card__body">
+        <div class="card__num">03</div>
+        <h3 class="card__t">Проколы и&nbsp;порезы</h3>
+        <p>Грибок изнутри, а не жгут снаружи. Боковые порезы тоже берём. Гарантия на&nbsp;ремонт прокола 12 месяцев.</p>
+      </div>
+      <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></div>
+    </a>
+    <a class="card rv" href="#zapis" data-open data-i="04">
+      <div class="card__img"><img src="assets/storage.webp" alt=""></div>
+      <div class="card__body">
+        <div class="card__num">04</div>
+        <h3 class="card__t">Хранение шин</h3>
+        <p>Сезон на стеллаже с биркой, а не на балконе. Забираешь, когда переобуваешься обратно.</p>
+      </div>
+      <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></div>
+    </a>
+    <a class="card rv" href="#zapis" data-open data-i="05">
+      <div class="card__img"><img src="assets/rim.webp" alt=""></div>
+      <div class="card__body">
+        <div class="card__num">05</div>
+        <h3 class="card__t">Правка литых дисков</h3>
+        <p>Поймал яму, диск повело. Выправляем на станке и&nbsp;проверяем на&nbsp;биение перед тем, как вернуть.</p>
+      </div>
+      <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></div>
+    </a>
+    <a class="card rv" href="#zapis" data-open data-i="06">
+      <div class="card__img"><img src="assets/van.webp" alt=""></div>
+      <div class="card__body">
+        <div class="card__num">06</div>
+        <h3 class="card__t">Выезд к&nbsp;клиенту</h3>
+        <p>Спустило у дома или на парковке у офиса. Приезжаем со&nbsp;станком, делаем на&nbsp;месте.</p>
+      </div>
+      <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></div>
+    </a>
+  </div>
+</section>
+
+<!-- 3. 25 МИНУТ (светлая тема) -->
+<section class="mn" id="minut" data-light>
+  <div class="mn__top">
+    <div class="kicker rv">02 / Как проходят 25 минут</div>
+    <h2 class="h2 rv">
+      <span class="ln"><span>Кофе ещё</span></span>
+      <span class="ln"><span>не остыл</span></span>
+    </h2>
+    <p class="lead rv">Машина стоит на линии ровно 25 минут. Всё это время видно из&nbsp;комнаты ожидания через стекло.</p>
+  </div>
+
+  <div class="route">
+    <svg class="route__line" viewBox="0 0 1440 1600" preserveAspectRatio="none" aria-hidden="true">
+      <path id="routePath" d="M 120 40 C 120 400, 700 300, 720 560 S 300 900, 360 1120 S 1200 1180, 1320 1560" />
+    </svg>
+
+    <div class="step" style="--x:120px;--y:0px" data-speed="0.06">
+      <div class="step__t">00:00</div>
+      <h4>Заезд на линию</h4>
+      <p>Двое на одну машину. Пока один снимает колёса, второй уже готовит станок.</p>
+    </div>
+
+    <figure class="ph" style="--x:420px;--y:80px;--w:340px" data-speed="0.16"><img src="assets/lift.webp" alt=""></figure>
+
+    <div class="step" style="--x:820px;--y:420px" data-speed="0.08">
+      <div class="step__t">00:04</div>
+      <h4>Колёса сняты</h4>
+      <p>Диск осматриваем до того, как трогать. Если есть биение или трещина, говорим сразу, а не после.</p>
+    </div>
+
+    <figure class="ph" style="--x:60px;--y:560px;--w:300px" data-speed="0.22"><img src="assets/mount.webp" alt=""></figure>
+
+    <div class="step" style="--x:400px;--y:900px" data-speed="0.05">
+      <div class="step__t">00:12</div>
+      <h4>Перебортировка</h4>
+      <p>Пластиковые накладки на головке станка, паста на борту. Диск не встречается с&nbsp;металлом.</p>
+    </div>
+
+    <figure class="ph" style="--x:1000px;--y:820px;--w:360px" data-speed="0.14"><img src="assets/balance.webp" alt=""></figure>
+
+    <div class="step" style="--x:640px;--y:1240px" data-speed="0.09">
+      <div class="step__t">00:19</div>
+      <h4>Балансировка</h4>
+      <p>На станке, потом финишная на самой машине. Ловим то, что станок не&nbsp;видит.</p>
+    </div>
+
+    <figure class="ph ph--wide" style="--x:120px;--y:1300px;--w:440px" data-speed="0.12"><img src="assets/bays.webp" alt=""></figure>
+
+    <div class="step step--last" style="--x:1080px;--y:1420px" data-speed="0.04">
+      <div class="step__t">00:25</div>
+      <h4>Ключи в руках</h4>
+      <p>Азот докачан, момент затяжки проверен. Кофе, кстати, ещё тёплый.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 4. РАБОТЫ (горизонтальная прокрутка) -->
+<section class="gl-rig" id="raboty">
+  <div class="gl" id="glStage" data-drag>
+    <div class="gl__head">
+      <div class="kicker rv">03 / Работы</div>
+      <h2 class="h2 h2--s rv">
+        <span class="ln"><span>Что привозят</span></span>
+        <span class="ln"><span>и с чем уезжают</span></span>
+      </h2>
+    </div>
+    <div class="gl__track" id="glTrack">
+      <figure class="gl__item">
+        <div class="gl__img"><img src="assets/patch.webp" alt=""></div>
+        <figcaption><b>Прокол, R17</b><span>Грибок изнутри, 20 минут. Гарантия 12 месяцев.</span></figcaption>
+      </figure>
+      <figure class="gl__item gl__item--wide">
+        <div class="gl__img"><img src="assets/stack.webp" alt=""></div>
+        <figcaption><b>Сезонный комплект, R19</b><span>Переобули, старые уехали на стеллаж до&nbsp;весны.</span></figcaption>
+      </figure>
+      <figure class="gl__item">
+        <div class="gl__img"><img src="assets/rim.webp" alt=""></div>
+        <figcaption><b>Литой диск после ямы, R18</b><span>Выправили, проверили на биение, поставили обратно.</span></figcaption>
+      </figure>
+      <figure class="gl__item">
+        <div class="gl__img"><img src="assets/van.webp" alt=""></div>
+        <figcaption><b>Выезд, ночь, парковка</b><span>Спустило у дома. Приехали со станком, сделали на&nbsp;месте.</span></figcaption>
+      </figure>
+      <figure class="gl__item gl__item--wide">
+        <div class="gl__img"><img src="assets/bays.webp" alt=""></div>
+        <figcaption><b>Две линии</b><span>Две машины одновременно. Поэтому запись на&nbsp;точное время держится.</span></figcaption>
+      </figure>
+      <figure class="gl__item">
+        <div class="gl__img"><img src="assets/storage.webp" alt=""></div>
+        <figcaption><b>Хранение</b><span>Каждый комплект с биркой. Найдём за минуту.</span></figcaption>
+      </figure>
+      <figure class="gl__item">
+        <div class="gl__img"><img src="assets/lounge.webp" alt=""></div>
+        <figcaption><b>Комната ожидания</b><span>Кофе и стекло в бокс. Видно, что делают с&nbsp;твоей машиной.</span></figcaption>
+      </figure>
+    </div>
+    <div class="gl__bar"><i id="glBar"></i></div>
+  </div>
+</section>
+
+<!-- 5. ЗАПИСЬ -->
+<section class="bk" id="zapis">
+  <div class="bk__l">
+    <div class="kicker rv">04 / Запись</div>
+    <h2 class="h2 rv">
+      <span class="ln"><span>Запись на</span></span>
+      <span class="ln"><span>точное время</span></span>
+    </h2>
+    <p class="lead rv">Не «подъезжайте, посмотрим». Записался на 18:40, в&nbsp;18:40 машина заезжает на линию. Перезвоним, чтобы подтвердить.</p>
+    <ul class="facts">
+      <li class="rv"><b>8:00–22:00</b><span>без выходных</span></li>
+      <li class="rv"><b>2 линии</b><span>две машины одновременно</span></li>
+      <li class="rv"><b>Азот</b><span>в шины бесплатно</span></li>
+      <li class="rv"><b>Кофе</b><span>в комнате ожидания</span></li>
+    </ul>
+  </div>
+  <div class="bk__r">
+    <form class="form rv" id="form" novalidate>
+      <label class="field">
+        <span>Имя</span>
+        <input type="text" name="name" autocomplete="name" required>
+      </label>
+      <label class="field">
+        <span>Телефон</span>
+        <input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="+7" required>
+      </label>
+      <button class="btn btn--red btn--big" type="submit">Записаться</button>
+      <p class="form__note">Перезвоним в течение рабочего дня и подтвердим время.</p>
+      <div class="form__ok" id="formOk"><b>Записали</b><span>Перезвоним, чтобы подтвердить время.</span></div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ФУТЕР -->
+<footer class="ft" id="ft">
+  <div class="ft__tire" id="ftTire"><img src="assets/tire.webp" alt=""></div>
+  <div class="ft__top">
+    <div class="ft__col">
+      <div class="ft__k">Адрес</div>
+      <div class="ft__v">[город], [адрес]</div>
+      <div class="ft__v ft__muted">8:00–22:00 / без выходных</div>
+    </div>
+    <div class="ft__col">
+      <div class="ft__k">Телефон</div>
+      <a class="ft__v roll" href="tel:+70000000000"><span><i>+7 000 000-00-00</i><i>+7 000 000-00-00</i></span></a>
+      <div class="ft__msg">
+        <a class="roll" href="#"><span><i>Telegram</i><i>Telegram</i></span></a>
+        <a class="roll" href="#"><span><i>WhatsApp</i><i>WhatsApp</i></span></a>
+        <a class="roll" href="#"><span><i>MAX</i><i>MAX</i></span></a>
+      </div>
+    </div>
+    <div class="ft__col ft__col--r">
+      <button class="btn btn--red" data-open>Записаться</button>
+    </div>
+  </div>
+  <div class="ft__logo" id="ftLogo" aria-label="ПРОТЕКТОР">
+    <span>П</span><span>Р</span><span>О</span><span>Т</span><span>Е</span><span>К</span><span>Т</span><span>О</span><span>Р</span>
+  </div>
+  <div class="ft__bottom">
+    <span>Шиномонтаж «Протектор»</span>
+    <span>R13–R22 / легковые и кроссоверы</span>
+    <span>Гарантия на ремонт прокола 12 месяцев</span>
+  </div>
+</footer>
+
+<!-- шторка записи -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer__bg" data-close></div>
+  <div class="drawer__panel">
+    <button class="drawer__x" data-close aria-label="Закрыть"><i></i><i></i></button>
+    <div class="kicker">Запись</div>
+    <h3 class="h3">На точное время</h3>
+    <p class="lead lead--s">Оставь имя и телефон. Перезвоним и подтвердим слот.</p>
+    <form class="form" id="form2" novalidate>
+      <label class="field"><span>Имя</span><input type="text" name="name" required></label>
+      <label class="field"><span>Телефон</span><input type="tel" name="phone" placeholder="+7" required></label>
+      <button class="btn btn--red btn--big" type="submit">Записаться</button>
+      <div class="form__ok" id="formOk2"><b>Записали</b><span>Перезвоним, чтобы подтвердить время.</span></div>
+    </form>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

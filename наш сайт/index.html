@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=1440">
+<title>РУССКОЕ ЗОЛОТО — ювелирная мастерская в Челябинске</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="dark">
+
+<!-- прелоадер: кольцо собирается -->
+<div class="pre" id="pre">
+  <div class="pre__bg"><img src="assets/pre_bg.webp" alt=""></div>
+  <div class="pre__stage">
+    <div class="pre__ring">
+      <svg class="pre__svg" viewBox="0 0 240 240" aria-hidden="true">
+        <defs>
+          <linearGradient id="preGold" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#f4d488"/>
+            <stop offset="0.5" stop-color="#e0b25a"/>
+            <stop offset="1" stop-color="#b9842f"/>
+          </linearGradient>
+        </defs>
+        <circle class="pre__track" cx="120" cy="120" r="92"/>
+        <circle class="pre__arc" id="preArc" cx="120" cy="120" r="92"/>
+      </svg>
+      <div class="pre__gem" id="preGem"></div>
+      <div class="pre__num"><span id="preNum">00</span></div>
+    </div>
+    <div class="pre__name">РУССКОЕ ЗОЛОТО</div>
+    <div class="pre__tag">ювелирная мастерская · Челябинск</div>
+  </div>
+</div>
+
+<!-- курсор -->
+<div class="cur" id="cur"><div class="cur__ring"></div><div class="cur__tag" id="curTag">тяни</div></div>
+
+<!-- шапка -->
+<header class="hd" id="hd">
+  <a class="hd__logo rise" href="#top" style="--d:300ms">
+    <img class="hd__avatar" src="assets/logo.jpg" alt="">
+    <span>РУССКОЕ ЗОЛОТО</span>
+  </a>
+  <div class="hd__where rise" style="--d:360ms">
+    <span>Челябинск · ТЦ «Теорема»</span>
+    <span class="hd__muted">Пн–пт 11:00–20:00</span>
+    <span class="hd__muted">Сб–вс 11:00–17:00</span>
+  </div>
+  <nav class="hd__nav rise" style="--d:420ms">
+    <a class="roll" href="#top"><span><i>Главная</i><i>Главная</i></span></a>
+    <a class="roll" href="#catalog"><span><i>Каталог</i><i>Каталог</i></span></a>
+    <a class="roll" href="#uslugi"><span><i>Услуги</i><i>Услуги</i></span></a>
+    <a class="roll" href="#zapis"><span><i>Запись</i><i>Запись</i></span></a>
+  </nav>
+  <a class="hd__phone rise" href="tel:+79000263366" style="--d:480ms">8-900-026-33-66</a>
+  <button class="btn btn--red rise" data-open style="--d:540ms">Записаться</button>
+</header>
+
+<main id="top">
+
+<!-- 1. ХИРО -->
+<section class="hero-rig" id="hero">
+  <div class="hero" id="heroStage">
+    <div class="hero__bg" id="heroBg"><img src="assets/hero_bg.jpg" alt=""></div>
+    <div class="hero__vig"></div>
+
+    <div class="hero__tire" id="tireWrap">
+      <div class="hero__tire-shadow"></div>
+      <div class="hero__tire-spin" id="tireSpin"><img src="assets/ring.webp" alt="" id="tireImg"></div>
+      <div class="hero__tire-light"></div>
+    </div>
+
+    <div class="hero__label rise" style="--d:1200ms">
+      <b>1–125 грамм</b>
+      <span>любое украшение на заказ</span>
+    </div>
+
+    <h1 class="hero__h rise" style="--d:900ms">
+      <span class="ln"><span>Создаём <span class="gold">украшения</span>,</span></span>
+      <span class="ln"><span>которые не снимают</span></span>
+    </h1>
+    <p class="hero__sub rise" style="--d:1100ms">Пока вы ищете парковку — мы уже греем паяльник.<br>20&nbsp;минут — и вы снова носите. А&nbsp;мы — с улыбкой и чистой совестью!</p>
+
+    <div class="hero__side">
+      <div class="plate plate--red rise" style="--d:1480ms">
+        <b>12 мес</b>
+        <span>гарантия на работу</span>
+      </div>
+      <div class="plate rise" style="--d:1560ms">
+        <div class="rating">
+          <div class="rating__avs">
+            <img src="assets/av1.webp" alt=""><img src="assets/av2.webp" alt=""><img src="assets/av3.webp" alt="">
+          </div>
+          <div class="rating__txt"><b>4.9</b><span>по отзывам на картах</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__hint rise" id="heroHint" style="--d:1800ms"><span>Листай</span><i></i></div>
+  </div>
+</section>
+
+<!-- 2. УСЛУГИ -->
+<section class="sv" id="uslugi">
+  <div class="sv__head">
+    <div class="sv__sticky">
+      <!-- 01 — о мастерской -->
+      <div class="sv__about">
+        <div class="kicker rv">01 / О мастерской</div>
+        <h2 class="h2 h2--m rv">
+          <span class="ln"><span><span class="gold">Ручная</span> работа</span></span>
+          <span class="ln"><span>с 2017 года.</span></span>
+        </h2>
+        <p class="lead rv">В мастерской «Русское Золото» в&nbsp;ТЦ&nbsp;«Теорема» мы&nbsp;не изготавливаем украшения — мы&nbsp;создаём ювелирные истории. Наш главный принцип — абсолютная прозрачность: точные сроки, честное взвешивание при&nbsp;вас и&nbsp;официальная гарантия до&nbsp;12&nbsp;месяцев.</p>
+      </div>
+
+      <div class="sv__sep rv"><i></i></div>
+
+      <!-- 02 — что делаем -->
+      <div class="sv__do">
+        <div class="kicker rv">02 / Что делаем</div>
+        <h2 class="h2 h2--m rv">
+          <span class="ln"><span>Всё с <span class="gold">золотом</span></span></span>
+          <span class="ln"><span>в одной</span></span>
+          <span class="ln"><span>мастерской.</span></span>
+        </h2>
+        <p class="lead rv">
+          Скупка, ремонт, переплавка, гравировка,<br>
+          вставка камней, подгонка по&nbsp;размеру,<br>
+          изготовление по&nbsp;эскизу и&nbsp;реставрация.<br>
+          <span class="sv__cta">Приехали — решили.</span>
+        </p>
+      </div>
+
+      <div class="sv__index rv"><span id="svIndex">01</span><span class="sv__index-of">/ 06</span></div>
+    </div>
+  </div>
+  <div class="sv__list">
+    <a class="card rv" href="#zapis" data-open data-i="01">
+      <div class="card__img"><img src="assets/s01.webp" alt=""></div>
+      <div class="card__body">
+        <div class="card__num">01</div>
+        <h3 class="card__t">Ремонт ювелирных украшений</h3>
+        <p>Восстанавливаем форму и&nbsp;целостность. Удлиним, укоротим, перепаяем замок. Работаем аккуратно, следов вмешательства не&nbsp;видно.</p>
+      </div>
+      <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></div>
+    </a>
+    <a class="card rv" href="#zapis" data-open data-i="02">
+      <div class="card__img"><img src="assets/s02.webp" alt=""></div>
+      <div class="card__body">
+        <div class="card__num">02</div>
+        <h3 class="card__t">Изготовление по&nbsp;каталогу и&nbsp;эскизу</h3>
+        <p>Нет в&nbsp;наличии? Сделаем. Есть эскиз или фото? Воплотим. Работаем по&nbsp;каталогу или вашей задумке — от&nbsp;эскиза до&nbsp;готового украшения.</p>
+      </div>
+      <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></div>
+    </a>
+    <a class="card rv" href="#zapis" data-open data-i="03">
+      <div class="card__img"><img src="assets/s03.webp" alt=""></div>
+      <div class="card__body">
+        <div class="card__num">03</div>
+        <h3 class="card__t">Подбор и&nbsp;вставка камней</h3>
+        <p>Подберём под&nbsp;цвет, размер и&nbsp;огранку. Вставим, закрепим, восстановим посадочное место. Работаем с&nbsp;кольцами, серьгами, подвесками, часами и&nbsp;браслетами.</p>
+      </div>
+      <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></div>
+    </a>
+    <a class="card rv" href="#zapis" data-open data-i="04">
+      <div class="card__img"><img src="assets/s04.webp" alt=""></div>
+      <div class="card__body">
+        <div class="card__num">04</div>
+        <h3 class="card__t">Лазерная пайка</h3>
+        <p>Точечная, ювелирная точность. Спаиваем даже самые тонкие детали без&nbsp;перегрева и&nbsp;деформации. Прочнее и&nbsp;аккуратнее обычной пайки.</p>
+      </div>
+      <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></div>
+    </a>
+    <a class="card rv" href="#zapis" data-open data-i="05">
+      <div class="card__img"><img src="assets/s05.webp" alt=""></div>
+      <div class="card__body">
+        <div class="card__num">05</div>
+        <h3 class="card__t">Лазерная гравировка</h3>
+        <p>Именная надпись, инициалы, дата или уникальный узор. Наносим на&nbsp;кольца, подвески, браслеты и&nbsp;часы. Аккуратно, контрастно, без&nbsp;потери пробы.</p>
+      </div>
+      <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></div>
+    </a>
+    <a class="card rv" href="#zapis" data-open data-i="06">
+      <div class="card__img"><img src="assets/s06.webp" alt=""></div>
+      <div class="card__body">
+        <div class="card__num">06</div>
+        <h3 class="card__t">Правка изделий</h3>
+        <p>Деформировалось кольцо, погнулся браслет или цепочка? Исправляем геометрию на&nbsp;специальном оборудовании. Возвращаем первоначальную форму без&nbsp;повреждений.</p>
+      </div>
+      <div class="card__arrow"><svg viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"/></svg></div>
+    </a>
+  </div>
+</section>
+
+<!-- 3. 20 МИНУТ (светлая тема) -->
+<section class="mn" id="minut" data-light>
+  <div class="mn__top">
+    <div class="kicker rv">02 / Как создаём за 20 минут</div>
+    <h2 class="h2 rv">
+      <span class="ln"><span>От эскиза</span></span>
+      <span class="ln"><span>до блеска</span></span>
+    </h2>
+    <p class="lead rv">Украшение собирается ровно 20 минут. Всё это время вы видите процесс через стекло мастерской.</p>
+  </div>
+
+  <div class="route">
+    <svg class="route__line" viewBox="0 0 1440 1600" preserveAspectRatio="none" aria-hidden="true">
+      <path id="routePath" d="M 120 40 C 120 400, 700 300, 720 560 S 300 900, 360 1120 S 1200 1180, 1320 1560" />
+    </svg>
+
+    <div class="step" style="--x:120px;--y:0px" data-speed="0.06">
+      <div class="step__t">00:00</div>
+      <h4>Эскиз и замер</h4>
+      <p>Приносите идею или фото. Снимаем размер пальца, рисуем форму прямо на месте.</p>
+    </div>
+
+    <figure class="ph" style="--x:420px;--y:80px;--w:340px" data-speed="0.16"><img src="assets/lift.webp" alt=""></figure>
+
+    <div class="step" style="--x:820px;--y:420px" data-speed="0.08">
+      <div class="step__t">00:04</div>
+      <h4>Литьё и пайка</h4>
+      <p>Плавим металл, соединяем детали. Паяльник уже горячий — спешить некуда.</p>
+    </div>
+
+    <figure class="ph" style="--x:60px;--y:560px;--w:300px" data-speed="0.22"><img src="assets/mount.webp" alt=""></figure>
+
+    <div class="step" style="--x:400px;--y:900px" data-speed="0.05">
+      <div class="step__t">00:12</div>
+      <h4>Шлифовка</h4>
+      <p>Убираем заусенцы, выравниваем форму до идеальной гладкости.</p>
+    </div>
+
+    <figure class="ph" style="--x:1000px;--y:820px;--w:360px" data-speed="0.14"><img src="assets/balance.webp" alt=""></figure>
+
+    <div class="step" style="--x:640px;--y:1240px" data-speed="0.09">
+      <div class="step__t">00:19</div>
+      <h4>Полировка</h4>
+      <p>Доводим до зеркального блеска. Видна каждая грань камня.</p>
+    </div>
+
+    <figure class="ph ph--wide" style="--x:120px;--y:1300px;--w:440px" data-speed="0.12"><img src="assets/bays.webp" alt=""></figure>
+
+    <div class="step step--last" style="--x:1080px;--y:1420px" data-speed="0.04">
+      <div class="step__t">00:20</div>
+      <h4>Готово — на руке</h4>
+      <p>Чистим, проверяем, надеваем на вас. 20 минут — и вы снова носите.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 4. РАБОТЫ (горизонтальная прокрутка) -->
+<section class="gl-rig" id="raboty">
+  <div class="gl" id="glStage" data-drag>
+    <div class="gl__head">
+      <div class="kicker rv">03 / Работы</div>
+      <h2 class="h2 h2--s rv">
+        <span class="ln"><span>Что привозят</span></span>
+        <span class="ln"><span>и с чем уезжают</span></span>
+      </h2>
+    </div>
+    <div class="gl__track" id="glTrack">
+      <figure class="gl__item">
+        <div class="gl__img"><img src="assets/patch.webp" alt=""></div>
+        <figcaption><b>Прокол, R17</b><span>Грибок изнутри, 20 минут. Гарантия 12 месяцев.</span></figcaption>
+      </figure>
+      <figure class="gl__item gl__item--wide">
+        <div class="gl__img"><img src="assets/stack.webp" alt=""></div>
+        <figcaption><b>Сезонный комплект, R19</b><span>Переобули, старые уехали на стеллаж до&nbsp;весны.</span></figcaption>
+      </figure>
+      <figure class="gl__item">
+        <div class="gl__img"><img src="assets/rim.webp" alt=""></div>
+        <figcaption><b>Литой диск после ямы, R18</b><span>Выправили, проверили на биение, поставили обратно.</span></figcaption>
+      </figure>
+      <figure class="gl__item">
+        <div class="gl__img"><img src="assets/van.webp" alt=""></div>
+        <figcaption><b>Выезд, ночь, парковка</b><span>Спустило у дома. Приехали со станком, сделали на&nbsp;месте.</span></figcaption>
+      </figure>
+      <figure class="gl__item gl__item--wide">
+        <div class="gl__img"><img src="assets/bays.webp" alt=""></div>
+        <figcaption><b>Две линии</b><span>Две машины одновременно. Поэтому запись на&nbsp;точное время держится.</span></figcaption>
+      </figure>
+      <figure class="gl__item">
+        <div class="gl__img"><img src="assets/storage.webp" alt=""></div>
+        <figcaption><b>Хранение</b><span>Каждый комплект с биркой. Найдём за минуту.</span></figcaption>
+      </figure>
+      <figure class="gl__item">
+        <div class="gl__img"><img src="assets/lounge.webp" alt=""></div>
+        <figcaption><b>Комната ожидания</b><span>Кофе и стекло в бокс. Видно, что делают с&nbsp;твоей машиной.</span></figcaption>
+      </figure>
+    </div>
+    <div class="gl__bar"><i id="glBar"></i></div>
+  </div>
+</section>
+
+<!-- 5. ЗАПИСЬ -->
+<section class="bk" id="zapis">
+  <div class="bk__l">
+    <div class="kicker rv">04 / Запись</div>
+    <h2 class="h2 rv">
+      <span class="ln"><span>Запись на</span></span>
+      <span class="ln"><span>точное время</span></span>
+    </h2>
+    <p class="lead rv">Не «подъезжайте, посмотрим». Записался на 18:40, в&nbsp;18:40 машина заезжает на линию. Перезвоним, чтобы подтвердить.</p>
+    <ul class="facts">
+      <li class="rv"><b>8:00–22:00</b><span>без выходных</span></li>
+      <li class="rv"><b>2 линии</b><span>две машины одновременно</span></li>
+      <li class="rv"><b>Азот</b><span>в шины бесплатно</span></li>
+      <li class="rv"><b>Кофе</b><span>в комнате ожидания</span></li>
+    </ul>
+  </div>
+  <div class="bk__r">
+    <form class="form rv" id="form" novalidate>
+      <label class="field">
+        <span>Имя</span>
+        <input type="text" name="name" autocomplete="name" required>
+      </label>
+      <label class="field">
+        <span>Телефон</span>
+        <input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="+7" required>
+      </label>
+      <button class="btn btn--red btn--big" type="submit">Записаться</button>
+      <p class="form__note">Перезвоним в течение рабочего дня и подтвердим время.</p>
+      <div class="form__ok" id="formOk"><b>Записали</b><span>Перезвоним, чтобы подтвердить время.</span></div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ФУТЕР -->
+<footer class="ft" id="ft">
+  <div class="ft__tire" id="ftTire"><img src="assets/tire.webp" alt=""></div>
+  <div class="ft__top">
+    <div class="ft__col">
+      <div class="ft__k">Адрес</div>
+      <div class="ft__v">[город], [адрес]</div>
+      <div class="ft__v ft__muted">8:00–22:00 / без выходных</div>
+    </div>
+    <div class="ft__col">
+      <div class="ft__k">Телефон</div>
+      <a class="ft__v roll" href="tel:+70000000000"><span><i>+7 000 000-00-00</i><i>+7 000 000-00-00</i></span></a>
+      <div class="ft__msg">
+        <a class="roll" href="#"><span><i>Telegram</i><i>Telegram</i></span></a>
+        <a class="roll" href="#"><span><i>WhatsApp</i><i>WhatsApp</i></span></a>
+        <a class="roll" href="#"><span><i>MAX</i><i>MAX</i></span></a>
+      </div>
+    </div>
+    <div class="ft__col ft__col--r">
+      <button class="btn btn--red" data-open>Записаться</button>
+    </div>
+  </div>
+  <div class="ft__logo" id="ftLogo" aria-label="ПРОТЕКТОР">
+    <span>П</span><span>Р</span><span>О</span><span>Т</span><span>Е</span><span>К</span><span>Т</span><span>О</span><span>Р</span>
+  </div>
+  <div class="ft__bottom">
+    <span>Шиномонтаж «Протектор»</span>
+    <span>R13–R22 / легковые и кроссоверы</span>
+    <span>Гарантия на ремонт прокола 12 месяцев</span>
+  </div>
+</footer>
+
+<!-- шторка записи -->
+<div class="drawer" id="drawer" aria-hidden="true">
+  <div class="drawer__bg" data-close></div>
+  <div class="drawer__panel" data-lenis-prevent>
+    <button class="drawer__x" data-close aria-label="Закрыть"><i></i><i></i></button>
+    <div class="kicker">Запись</div>
+    <h3 class="h3">На точное время</h3>
+    <p class="lead lead--s">Оставь имя и телефон. Перезвоним и подтвердим слот.</p>
+    <form class="form" id="form2" novalidate>
+      <label class="field"><span>Имя</span><input type="text" name="name" required></label>
+      <label class="field"><span>Телефон</span><input type="tel" name="phone" placeholder="+7" required></label>
+      <button class="btn btn--red btn--big" type="submit">Записаться</button>
+      <div class="form__ok" id="formOk2"><b>Записали</b><span>Перезвоним, чтобы подтвердить время.</span></div>
+    </form>
+  </div>
+</div>
+
+<!-- ВРЕМЕННЫЙ индикатор для отладки скролла (удалю после проверки) -->
+<div id="diag" style="position:fixed;left:12px;bottom:12px;z-index:9999;padding:8px 12px;font:12px/1.45 monospace;background:#111;color:#ffcc00;border:1px solid #444;border-radius:6px;letter-spacing:0;text-transform:none">
+  сборка 20:25 · JS не запустился
+</div>
+
+<script src="vendor/lenis.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
